@@ -1,0 +1,8 @@
+---
+- name: Ansible Demo for Windows
+  hosts: all
+  tasks:
+    - name: Stop IIS
+      win_service:
+        name: World Wide Web Publishing Service
+        state: stopped

@@ -1,0 +1,8 @@
+---
+- name: Ansible Demo for Windows
+  hosts: all
+  tasks:
+    - name: Stop MSSQL
+      win_service:
+        name: SQL Server (SQLEXPRESS)
+        state: stopped

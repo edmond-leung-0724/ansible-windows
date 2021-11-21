@@ -1,0 +1,6 @@
+---
+- name: Ansible Demo for Windows
+  hosts: all
+  tasks:
+    - name: Shutdown Windows
+      win_command: shutdown /s

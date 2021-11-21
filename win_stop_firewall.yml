@@ -1,0 +1,11 @@
+---
+- name: Ansible Demo for Windows
+  hosts: all
+  tasks:
+    - name: Stop Windows Firewall
+      win_firewall:
+        state: disabled
+        profiles:
+        - Domain
+        - Private
+        - Public
